@@ -31,7 +31,9 @@ public class practica {
             switch (op) {
                 // se establece un switch para cada caso del empeledo
                 case 1:
-                    System.out.println("¿El empleado vendio algun vehiculo por encima de los 10.000,00?");
+                    System.out.println(
+                            "SI DESEA INGRESAR AUTOS VENDIDOS POR ENCIMA DE LOS 10000 ESCRIBA 'SI' PARA CALCULO DE SU COMISION E INFORME");
+                    System.out.println("CASO CONTRARIO ESCRIBA 'NO' PARA IMPRIMIR SU INFORME RESPECTIVO");
                     confirmacion = sc.next();
                     confirmacion = confirmacion.toUpperCase();
                     switch (confirmacion) {
@@ -40,7 +42,6 @@ public class practica {
                             break;
                         case "NO":
                             f.sueldo_normal(args); // no se le debe renumerar comsion
-        
                             break;
                         default:
                             System.out.println("Respuesta no valida");
@@ -56,7 +57,6 @@ public class practica {
                     break;
                 case 4:
                     d.Secuencia(args);
-
                     break;
                 case 5:
                     // se crea este caso para presentar el mensaje de manera correcta que salio del
@@ -71,7 +71,5 @@ public class practica {
             System.out.println("Gracias por usar :)");
         }
         sc.close();
-
     }
-
 }
